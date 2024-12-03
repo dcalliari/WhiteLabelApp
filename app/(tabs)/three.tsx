@@ -1,15 +1,12 @@
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-import brandConfig from '@/config';
 
-export default function TabTwoScreen() {
+export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{brandConfig.name}</Text>
+      <Text style={styles.title}>Perfil</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/two.tsx" />
+      <Text>Informações do perfil aqui</Text>
     </View>
   );
 }
